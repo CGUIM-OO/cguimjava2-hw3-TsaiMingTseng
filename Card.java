@@ -27,14 +27,9 @@ public enum Suit { Club, Diamond, Heart, Spade};
 		return null;
 	}
 	public void printCard(){
-		String number[] = {"J" , "Q" , "K"};
-		if(rank >10)
-		{
-			System.out.println(suit +","+ number[rank-11]);
-		}
-		else{
-		System.out.println(suit + "," + rank);
-		}
+		String number[] = {"Ace" , "Two" , "Three" , "Four" , "Five" , "Six" ,
+				"Seven" , "Eight" , "Nine" , "Ten" , "J" , "Q" , "K"};
+		System.out.println(suit + "\t" +number[rank-1]);
 	}
 	public Card.Suit getSuit(){
 		return suit;
