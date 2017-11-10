@@ -21,6 +21,7 @@ public class Deck {
 				}
 			}
 		}
+		shuffle();
 	}
 	public void printDeck(){
 		for(int count = 0 ; count < cards.size() ; count ++)
